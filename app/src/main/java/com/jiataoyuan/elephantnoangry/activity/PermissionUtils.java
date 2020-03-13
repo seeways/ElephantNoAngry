@@ -66,17 +66,6 @@ public class PermissionUtils extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle("警告！")
                 .setMessage("请前往设置->应用->PermissionDemo->权限中打开相关权限，否则功能无法正常运行！")
-                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // 一般情况下如果用户不授权的话，功能是无法运行的，做退出处理
-                        finish();
-                    }
-                }).show();
-
-        new AlertDialog.Builder(this)
-                .setTitle("警告！")
-                .setMessage("请前往设置->应用->PermissionDemo->权限中打开相关权限，否则功能无法正常运行！")
                 .setPositiveButton("确定", (dialog, which) -> {
                     // 一般情况下如果用户不授权的话，功能是无法运行的，做退出处理
                     finish();
